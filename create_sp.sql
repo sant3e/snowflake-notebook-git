@@ -1,4 +1,5 @@
 CREATE OR REPLACE PROCEDURE filter_by_column_value(tableName VARCHAR, column_value VARCHAR)
+    RETURNS VARIANT
     LANGUAGE PYTHON
     RUNTIME_VERSION = '3.8'
     PACKAGES = ('snowflake-snowpark-python')
