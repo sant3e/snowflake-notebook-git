@@ -4,4 +4,4 @@ CREATE OR REPLACE PROCEDURE filter_by_column_value(tableName VARCHAR, column_val
     RUNTIME_VERSION = '3.8'
     PACKAGES = ('snowflake-snowpark-python')
     IMPORTS = ('@demo.public.my_github_repo/branches/master/python-script.filter.py')
-    HANDLE = 'filter.filter_by_column_value';
+    HANDLER = 'filter.filter_by_column_value';
